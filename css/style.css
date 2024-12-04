@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Variables globales */
+
+
+/* Variables globales */
+
+:root {
+    --primary-color: #8e44ad;
+    /* Púrpura */
+    --secondary-color: #3498db;
+    /* Azul eléctrico */
+    --background-color: #1c1c2e;
+    /* Fondo oscuro */
+    --text-color: #f5f5f5;
+    /* Blanco suave */
+    --button-hover: red;
+    /* Rosa brillante */
+    --border-color: rgba(255, 255, 255, 0.2);
+    /* Borde translúcido */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+/* Sección principal */
+
+section {
+    text-align: center;
+    width: 90%;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 30px 20px;
+}
+
+
+/* Títulos */
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+    text-shadow: 0 0 10px var(--primary-color);
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    color: var(--secondary-color);
+    text-shadow: 0 0 8px var(--secondary-color);
+}
+
+
+/* Ícono */
+
+i {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+i:hover {
+    transform: scale(1.2);
+    color: var(--primary-color);
+}
+
+
+/* Contenedor de botones */
+
+#con-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+/* Botones */
+
+button {
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text-color);
+    background: linear-gradient(145deg, #1f1f1f, #292929);
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 150px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+button:hover {
+    background: var(--button-hover);
+    border-color: var(--button-hover);
+    color: #000;
+    box-shadow: 0 8px 20px rgba(255, 152, 0, 0.6);
+    transform: translateY(-3px);
+}
+
+
+/* Efecto al hacer clic */
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 15px rgba(255, 152, 0, 0.5);
+}
